@@ -3,7 +3,9 @@
     <h1><%= mensaje %></h1>
     <ul>
         <%  for( let i = 0; i < lista.length; i++ ) { %>
-            <li> <%= lista[i].nombre  %> </li>
+            <li> Nombre: <a href="/bandas/<%= lista[i].id %>">
+                <%= lista[i].nombre %>
+            </a> <img src="<%= lista[i].cover %>" ></li></li>
             <% }  
             %>
     </ul>
