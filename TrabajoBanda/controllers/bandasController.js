@@ -17,7 +17,7 @@ const bandasController = {
                 });  
             }
         }
-        if (idd > bandas.lista.length) {
+        if (idd > bandas.lista.length || idd < bandas.lista.length) {
                 return res.send('No hay ninguna banda con este ID');
         
         }
